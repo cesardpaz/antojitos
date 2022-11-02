@@ -1,0 +1,23 @@
+{
+  "name": "antojitos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/antojitos_public.css --watch",
+    "build": "npx webpack --mode production --config webpack.config.js",
+    "dev": "npx webpack --mode development --config webpack.config.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "@splidejs/splide": "^4.1.3"
+  }
+}
